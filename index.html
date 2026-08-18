@@ -3,14 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VetConnect</title>
+    <title>VetConnect - Inicio</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
     
-    <!-- Paso 9: Navbar responsive de Bootstrap -->
+    <!-- Navbar -->
     <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
         <div class="container">
             <a class="navbar-brand" href="index.html">VetConnect</a>
@@ -19,24 +18,25 @@
             </button>
             <div class="collapse navbar-collapse" id="menuPrincipal">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Inicio</a></li>
                     <li class="nav-item"><a class="nav-link" href="mascotas.html">Mascotas</a></li>
                     <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                    <li class="nav-item"><a class="nav-link text-warning" href="login.html">Iniciar Sesión</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <header class="text-center py-4">
+    <!-- Encabezado -->
+    <header class="text-center py-5 bg-light">
         <h1>VetConnect</h1>
-        <p>Sistema de gestión veterinaria</p>
+        <p class="lead">Sistema de gestión veterinaria</p>
     </header>
     
+    <!-- Contenido Principal: Cards -->
     <main>
-        <!-- Pasos 5, 6 y 8: Grid System y Cards -->
         <section class="container my-5">
             <h2 class="text-center mb-4">Servicios</h2>
-            
             <div class="row g-4">
                 <div class="col-12 col-md-6 col-lg-4">
                     <div class="card h-100 shadow-sm">
@@ -47,7 +47,6 @@
                         </div>
                     </div>
                 </div>
-                
                 <div class="col-12 col-md-6 col-lg-4">
                     <div class="card h-100 shadow-sm">
                         <div class="card-body">
@@ -57,7 +56,6 @@
                         </div>
                     </div>
                 </div>
-                
                 <div class="col-12 col-md-6 col-lg-4">
                     <div class="card h-100 shadow-sm">
                         <div class="card-body">
@@ -70,10 +68,6 @@
             </div>
         </section>
     </main>
-    
-    <footer class="bg-light text-center py-4 mt-5">
-        <p class="mb-0">Desarrollo Web y Móvil 2026</p>
-    </footer>
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 </body>
