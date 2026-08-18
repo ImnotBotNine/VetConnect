@@ -8,5 +8,5 @@ body {
 
 .card:hover {
     transform: translateY(-4px);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.15) !important; /* Le da un toque extra de sombra al flotar */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15) !important; 
 }
