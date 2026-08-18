@@ -7,10 +7,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
     
-    <!-- Navbar responsive de Bootstrap -->
+    <!-- Navbar -->
     <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
         <div class="container">
             <a class="navbar-brand" href="index.html">VetConnect</a>
@@ -21,41 +20,36 @@
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
                     <li class="nav-item"><a class="nav-link" href="mascotas.html">Mascotas</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="contacto.html">Contacto</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <header class="text-center py-4">
-        <h1>Contacto</h1>
-    </header>
-    
-    <main class="container my-4">
-        <!-- Formulario (con clases básicas de Bootstrap para que luzca bien) -->
-        <form class="mx-auto" style="max-width: 400px;">
-            <div class="mb-3">
-                <label for="nombre" class="form-label">Nombre</label>
-                <input type="text" id="nombre" name="nombre" class="form-control">
+    <main class="container my-5">
+        <h2 class="text-center mb-4">Contacto</h2>
+        
+        <!-- Formulario -->
+        <div class="card shadow-sm mx-auto" style="max-width: 500px;">
+            <div class="card-body p-4">
+                <form>
+                    <div class="mb-3">
+                        <label for="nombre" class="form-label">Nombre</label>
+                        <input type="text" class="form-control" id="nombre" placeholder="Tu nombre">
+                    </div>
+                    <div class="mb-3">
+                        <label for="correo" class="form-label">Correo electrónico</label>
+                        <input type="email" class="form-control" id="correo" placeholder="nombre@ejemplo.com">
+                    </div>
+                    <div class="mb-3">
+                        <label for="mensaje" class="form-label">Mensaje</label>
+                        <textarea class="form-control" id="mensaje" rows="4" placeholder="Escribe tu mensaje aquí..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">Enviar mensaje</button>
+                </form>
             </div>
-            
-            <div class="mb-3">
-                <label for="correo" class="form-label">Correo</label>
-                <input type="email" id="correo" name="correo" class="form-control">
-            </div>
-            
-            <div class="mb-3">
-                <label for="mensaje" class="form-label">Mensaje</label>
-                <textarea id="mensaje" name="mensaje" class="form-control" rows="4"></textarea>
-            </div>
-            
-            <button type="submit" class="btn btn-primary w-100">Enviar</button>
-        </form>
+        </div>
     </main>
-
-    <footer class="bg-light text-center py-4 mt-5">
-        <p class="mb-0">Desarrollo Web y Móvil 2026</p>
-    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 </body>
